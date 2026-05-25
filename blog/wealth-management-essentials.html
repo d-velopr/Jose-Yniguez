@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO Core ── -->
+  <title>Wealth Management 101: The Complete Guide | Jose Yniguez Financial</title>
+  <meta name="description" content="A complete beginner-to-advanced guide to wealth management — what it is, how it works, and how to build a financial plan that grows and protects your wealth for the long term." />
+  <meta name="keywords" content="wealth management guide, financial planning 101, how to manage wealth, investment strategy, retirement planning guide, financial advisor, Jose Yniguez wealth management" />
+  <meta name="author" content="Jose Yniguez" />
+  <link rel="canonical" href="https://joseyniguez.github.io/blog/wealth-management-essentials.html" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Wealth Management 101: The Complete Guide to Building and Protecting Your Financial Future" />
+  <meta property="og:description" content="Wealth management is more than picking stocks. Learn the holistic approach that integrates investment strategy, risk management, tax efficiency, and legacy planning." />
+  <meta property="og:url" content="https://joseyniguez.github.io/blog/wealth-management-essentials.html" />
+  <meta property="article:author" content="Jose Yniguez" />
+  <meta property="article:published_time" content="2025-04-15" />
+
+  <!-- ── Schema.org ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Wealth Management 101: The Complete Guide to Building and Protecting Your Financial Future",
+    "description": "A comprehensive guide to understanding wealth management — what it is, how it works, and how to build a financial plan that grows and protects your wealth for the long term.",
+    "author": {
+      "@type": "Person",
+      "name": "Jose Yniguez",
+      "url": "https://joseyniguez.github.io/"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Jose Yniguez"
+    },
+    "datePublished": "2025-04-15",
+    "url": "https://joseyniguez.github.io/blog/wealth-management-essentials.html"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:      #1A2B4A;
+      --navy-dark: #0F1C33;
+      --gold:      #C9922A;
+      --gold-lt:   #E8B84B;
+      --white:     #FFFFFF;
+      --off-white: #F6F8FC;
+      --text:      #2D3748;
+      --muted:     #6B7280;
+      --border:    #E5E7EB;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+
+    .nav {
+      background: var(--navy-dark);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+    .nav__inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav__brand { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--white); font-weight: 700; }
+    .nav__back { font-size: 0.85rem; color: rgba(255,255,255,0.7); display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+    .nav__back:hover { color: var(--gold); }
+    .nav__cta { background: var(--gold); color: var(--white); padding: 10px 20px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; transition: background 0.2s; }
+    .nav__cta:hover { background: var(--gold-lt); }
+
+    .article-hero {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, #223560 60%, #1A3D5C 100%);
+      padding: 80px 0 72px;
+    }
+    .article-hero__inner { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+    .article-meta { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+    .article-cat { background: rgba(201,146,42,0.2); color: var(--gold); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; }
+    .article-date, .article-read-time { font-size: 0.82rem; color: rgba(255,255,255,0.5); }
+
+    .article-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .article-hero__sub { font-size: 1.05rem; color: rgba(255,255,255,0.7); line-height: 1.65; }
+    .article-author { display: flex; align-items: center; gap: 12px; margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); }
+    .article-author__avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-weight: 700; color: var(--white); font-size: 1rem; }
+    .article-author__name { font-size: 0.9rem; color: var(--white); font-weight: 600; }
+    .article-author__title { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+
+    /* TOC */
+    .toc {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+    }
+    .toc__title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .toc__list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .toc__list li { display: flex; align-items: center; gap: 10px; }
+    .toc__list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .toc__list a { font-size: 0.9rem; color: var(--navy); transition: color 0.2s; }
+    .toc__list a:hover { color: var(--gold); }
+
+    /* Article body */
+    .article-body { max-width: 760px; margin: 0 auto; padding: 64px 24px; }
+    .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.7rem; color: var(--navy); margin: 52px 0 16px; line-height: 1.25; }
+    .article-body h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--navy); margin: 36px 0 12px; }
+    .article-body p { font-size: 1.02rem; color: #374151; margin-bottom: 20px; line-height: 1.8; }
+    .article-body strong { color: var(--navy); font-weight: 600; }
+    .article-body ul, .article-body ol { margin: 16px 0 24px 24px; display: flex; flex-direction: column; gap: 10px; }
+    .article-body li { font-size: 1rem; color: #374151; line-height: 1.7; }
+    .article-body li::marker { color: var(--gold); }
+    .article-body a { color: var(--gold); border-bottom: 1px solid rgba(201,146,42,0.3); transition: border-color 0.2s; }
+    .article-body a:hover { border-color: var(--gold); }
+
+    .callout {
+      background: linear-gradient(135deg, rgba(26,43,74,0.06) 0%, rgba(201,146,42,0.06) 100%);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+    .callout p { margin: 0; font-size: 1.02rem; color: var(--navy); font-style: italic; }
+    .callout p strong { color: var(--gold); }
+
+    /* Pillar cards */
+    .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 32px 0; }
+    .pillar {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .pillar:hover { box-shadow: 0 8px 24px rgba(26,43,74,0.1); transform: translateY(-2px); }
+    .pillar__icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .pillar__title { font-family: 'Playfair Display', serif; font-size: 1.05rem; color: var(--navy); margin-bottom: 8px; }
+    .pillar__desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; margin: 0; }
+
+    /* Checklist */
+    .checklist { list-style: none; margin: 20px 0 28px; display: flex; flex-direction: column; gap: 10px; }
+    .checklist li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: #374151; }
+    .checklist li::before { content: '✓'; color: #16a34a; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+
+    .article-cta {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, #223560 100%);
+      border-radius: 16px;
+      padding: 48px;
+      text-align: center;
+      margin: 56px 0 0;
+    }
+    .article-cta h3 { font-family: 'Playfair Display', serif; font-size: 1.7rem; color: var(--white); margin: 0 0 12px; }
+    .article-cta p { color: rgba(255,255,255,0.7); margin: 0 0 28px; font-size: 1rem; }
+    .btn-gold {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-gold:hover { background: var(--gold-lt); transform: translateY(-2px); border-bottom: none; }
+
+    .footer { background: var(--navy-dark); padding: 32px 0; text-align: center; }
+    .footer__inner { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    .footer__links-row { display: flex; justify-content: center; gap: 32px; margin-bottom: 16px; flex-wrap: wrap; }
+    .footer__links-row a { font-size: 0.85rem; color: rgba(255,255,255,0.55); transition: color 0.2s; }
+    .footer__links-row a:hover { color: var(--white); border-bottom: none; }
+    .footer__copy { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
+
+    @media (max-width: 640px) {
+      .nav__back span { display: none; }
+      .article-hero h1 { font-size: 1.7rem; }
+      .article-cta { padding: 32px 24px; }
+      .pillars { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__brand">Jose Yniguez</a>
+      <a href="../index.html#blog" class="nav__back">← <span>Back to Articles</span></a>
+      <a href="../index.html#contact" class="nav__cta">Free Consultation</a>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <div class="article-hero__inner">
+      <div class="article-meta">
+        <span class="article-cat">Wealth Management</span>
+        <time class="article-date" datetime="2025-04-15">April 15, 2025</time>
+        <span class="article-read-time">· 10 min read</span>
+      </div>
+      <h1>Wealth Management 101: The Complete Guide to Building and Protecting Your Financial Future</h1>
+      <p class="article-hero__sub">Wealth management is more than picking stocks — it's a holistic discipline that integrates investment strategy, risk management, tax efficiency, and legacy planning into one coordinated plan built around your life.</p>
+      <div class="article-author">
+        <div class="article-author__avatar" aria-hidden="true">JY</div>
+        <div>
+          <div class="article-author__name">Jose Yniguez</div>
+          <div class="article-author__title">Wealth Management &amp; Insurance Advisor</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="article-body">
+
+    <nav class="toc" aria-label="Table of contents">
+      <p class="toc__title">In This Guide</p>
+      <ul class="toc__list" role="list">
+        <li><a href="#what-is">What Is Wealth Management?</a></li>
+        <li><a href="#pillars">The 5 Pillars of a Comprehensive Financial Plan</a></li>
+        <li><a href="#investing">Investment Strategy: Growing What You Have</a></li>
+        <li><a href="#protection">Protection Planning: Keeping What You've Built</a></li>
+        <li><a href="#retirement">Retirement Planning: Making Your Money Last</a></li>
+        <li><a href="#tax">Tax Efficiency: Keeping More of What You Earn</a></li>
+        <li><a href="#legacy">Legacy Planning: Building Wealth Beyond You</a></li>
+        <li><a href="#getting-started">How to Get Started</a></li>
+      </ul>
+    </nav>
+
+    <p>If you search "wealth management" online, you'll find a flood of articles about stock picks, market timing, and investment returns. And while investing matters, that's a dangerously narrow view of what wealth management actually is.</p>
+
+    <p>True wealth management is a <strong>comprehensive, coordinated approach</strong> to your entire financial life. It's about making sure every piece of your financial picture — your investments, your insurance, your tax strategy, your retirement plan, and your estate — is working together toward the same goals.</p>
+
+    <p>Think of it like a sports team. You can have the best quarterback in the league, but if your offensive line isn't protecting him, your wide receivers aren't running the right routes, and your defense is giving up points — you lose. Wealth management is the coach's playbook that makes every player work in sync.</p>
+
+    <p>In this guide, I'm going to walk you through exactly what wealth management looks like in practice, why each component matters, and how to think about building a plan that actually works for your life.</p>
+
+    <h2 id="what-is">What Is Wealth Management?</h2>
+
+    <p>Wealth management is the ongoing process of <strong>building, protecting, growing, and transferring financial assets</strong> in alignment with your personal goals, timeline, and values.</p>
+
+    <p>It is not a product you buy. It's a relationship with a process. The best wealth management relationships involve:</p>
+
+    <ul>
+      <li>A clear understanding of your short, medium, and long-term goals</li>
+      <li>Regular review and adjustment as your life changes</li>
+      <li>Coordination across multiple financial disciplines (investing, insurance, taxes, estate)</li>
+      <li>A trusted advisor who listens first and recommends second</li>
+    </ul>
+
+    <p>Wealth management serves people at every income level — you don't need to be a millionaire to benefit from a thoughtful financial plan. In fact, the earlier you start, the more powerful the results.</p>
+
+    <h2 id="pillars">The 5 Pillars of a Comprehensive Financial Plan</h2>
+
+    <p>I think about financial planning through five interconnected pillars. Each one matters independently, but they're most powerful when they reinforce each other.</p>
+
+    <div class="pillars" role="list">
+      <div class="pillar" role="listitem">
+        <div class="pillar__icon">📈</div>
+        <p class="pillar__title">Investment Strategy</p>
+        <p class="pillar__desc">Growing your assets through disciplined, goal-aligned investing across stocks, bonds, real estate, and other vehicles.</p>
+      </div>
+      <div class="pillar" role="listitem">
+        <div class="pillar__icon">🛡️</div>
+        <p class="pillar__title">Protection Planning</p>
+        <p class="pillar__desc">Life insurance, disability coverage, and risk management to protect your income, your family, and your assets.</p>
+      </div>
+      <div class="pillar" role="listitem">
+        <div class="pillar__icon">🏖️</div>
+        <p class="pillar__title">Retirement Planning</p>
+        <p class="pillar__desc">Creating a sustainable income strategy for retirement so your money lasts as long — or longer — than you do.</p>
+      </div>
+      <div class="pillar" role="listitem">
+        <div class="pillar__icon">💰</div>
+        <p class="pillar__title">Tax Efficiency</p>
+        <p class="pillar__desc">Minimizing tax drag on your wealth accumulation, income, and eventual wealth transfer through smart structuring.</p>
+      </div>
+      <div class="pillar" role="listitem">
+        <div class="pillar__icon">🏛️</div>
+        <p class="pillar__title">Legacy Planning</p>
+        <p class="pillar__desc">Estate planning and wealth transfer strategies to ensure your assets reach the right people, in the right way, at the right time.</p>
+      </div>
+      <div class="pillar" role="listitem">
+        <div class="pillar__icon">🎯</div>
+        <p class="pillar__title">Goal Alignment</p>
+        <p class="pillar__desc">Anchoring every strategy to your real-life goals — your values, your family, your vision for what "enough" looks like.</p>
+      </div>
+    </div>
+
+    <h2 id="investing">Investment Strategy: Growing What You Have</h2>
+
+    <p>Investment strategy is probably what most people think of first when they hear "wealth management." And it is a core component — but it's one piece of a larger picture.</p>
+
+    <p>A sound investment strategy answers several key questions:</p>
+
+    <ul>
+      <li><strong>What is your time horizon?</strong> Are you investing for 5 years or 35 years? Your timeline dramatically changes which investments are appropriate.</li>
+      <li><strong>What is your risk tolerance?</strong> How much volatility can you stomach emotionally and financially? Losing sleep over market swings leads to bad decisions.</li>
+      <li><strong>What accounts make sense?</strong> Pre-tax accounts (401k, Traditional IRA), post-tax accounts (Roth IRA, Roth 401k), taxable brokerage accounts, and tax-free vehicles like life insurance — each have different strengths depending on your situation.</li>
+      <li><strong>What is your diversification strategy?</strong> Proper diversification across asset classes, geographies, and sectors reduces risk without necessarily reducing returns.</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>Key insight:</strong> Investment returns matter — but so does investment behavior. Research consistently shows that the average investor significantly underperforms the average market return because they buy high and sell low out of emotion. A good advisor helps you stay disciplined when markets are volatile.</p>
+    </div>
+
+    <p>The investment component of your plan should always be calibrated to your personal goals — not a generic benchmark. Someone saving for retirement at 60 has very different investment needs than someone building a college fund for a newborn.</p>
+
+    <h2 id="protection">Protection Planning: Keeping What You've Built</h2>
+
+    <p>Imagine spending 20 years diligently building wealth — saving, investing, growing a business — and then losing it all because of an illness, a lawsuit, or an untimely death. Protection planning exists to prevent exactly this scenario.</p>
+
+    <h3>Life Insurance</h3>
+    <p>Life insurance is the foundation of protection planning for most families. It replaces your income if you die prematurely, pays off debts, funds your children's education, and — in the right structures — serves as a tax-advantaged wealth-building vehicle. I've written a <a href="life-insurance-investment-strategy.html">full guide on how life insurance works as a wealth-building tool</a> that's worth reading.</p>
+
+    <h3>Disability Insurance</h3>
+    <p>Your income is likely your most valuable financial asset. A 35-year-old earning $100,000 per year has over $3 million in future earnings ahead of them. Disability insurance protects that income stream if illness or injury prevents you from working. Yet most Americans are dramatically underinsured here.</p>
+
+    <h3>Property and Liability Coverage</h3>
+    <p>Adequate homeowner's, auto, and umbrella liability coverage prevents a single accident or lawsuit from wiping out years of accumulated wealth. An umbrella policy in particular — which provides an additional $1M+ of liability coverage — is inexpensive relative to its protection value.</p>
+
+    <h3>Long-Term Care</h3>
+    <p>The average cost of nursing home care in the U.S. exceeds $100,000 per year. Without long-term care insurance or a dedicated financial plan for healthcare expenses, a prolonged illness can devastate a retirement portfolio. This is a critical — and often overlooked — planning consideration.</p>
+
+    <h2 id="retirement">Retirement Planning: Making Your Money Last</h2>
+
+    <p>Retirement planning isn't just about saving enough — it's about creating a sustainable income strategy that covers your expenses for what could be a 30+ year retirement without you running out of money.</p>
+
+    <p>A comprehensive retirement plan addresses:</p>
+
+    <ul>
+      <li><strong>Income sources:</strong> Social Security optimization, pensions, portfolio withdrawals, annuity income, rental income, and tax-free life insurance distributions</li>
+      <li><strong>Withdrawal strategy:</strong> Which accounts to draw from first (and in what order) to minimize taxes and maximize longevity of your portfolio</li>
+      <li><strong>Healthcare costs:</strong> Medicare planning, Medigap coverage, and budgeting for out-of-pocket healthcare expenses</li>
+      <li><strong>Sequence of returns risk:</strong> Protecting your plan against a market downturn in the early years of retirement, which can have an outsized negative impact on your long-term portfolio</li>
+      <li><strong>Social Security timing:</strong> When to claim Social Security matters enormously — delaying from 62 to 70 can increase your monthly benefit by more than 75%</li>
+    </ul>
+
+    <p>The goal of retirement planning is simple in concept: <strong>never outlive your money.</strong> Achieving that goal requires careful coordination of all your retirement income sources and assets.</p>
+
+    <h2 id="tax">Tax Efficiency: Keeping More of What You Earn</h2>
+
+    <p>Taxes are one of the largest expenses most people face over their lifetimes — and one of the most controllable. Yet most people pay far more in taxes than necessary because they lack a coordinated tax strategy.</p>
+
+    <p>Tax-efficient wealth management includes:</p>
+
+    <ul>
+      <li><strong>Tax-loss harvesting</strong> in investment accounts to offset gains</li>
+      <li><strong>Strategic Roth conversions</strong> to shift assets from taxable to tax-free buckets during low-income years</li>
+      <li><strong>Asset location</strong> — placing tax-inefficient investments in tax-advantaged accounts and tax-efficient investments in taxable accounts</li>
+      <li><strong>Charitable giving strategies</strong> like donor-advised funds that maximize deductibility</li>
+      <li><strong>Tax-free income in retirement</strong> via Roth accounts and properly structured life insurance</li>
+      <li><strong>Business structure optimization</strong> for self-employed individuals and business owners</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>The number to know:</strong> A 1% reduction in your annual tax burden, compounded over 30 years, can add hundreds of thousands of dollars to your net worth. Tax efficiency isn't a minor detail — it's one of the highest-leverage moves in financial planning.</p>
+    </div>
+
+    <h2 id="legacy">Legacy Planning: Building Wealth Beyond You</h2>
+
+    <p>Legacy planning is about ensuring your wealth ends up where you intend — efficiently, with minimal taxes, legal complications, and family conflict. It's also about aligning your financial resources with the values and causes that matter most to you.</p>
+
+    <p>Estate planning essentials include:</p>
+
+    <ul>
+      <li><strong>Will or trust</strong> to specify asset distribution and avoid probate</li>
+      <li><strong>Beneficiary designations</strong> on retirement accounts and life insurance — these override your will, so they must be kept current</li>
+      <li><strong>Power of attorney</strong> for financial and healthcare decisions if you become incapacitated</li>
+      <li><strong>Life insurance</strong> as a tax-free, immediate liquidity tool for heirs</li>
+      <li><strong>Irrevocable Life Insurance Trusts (ILITs)</strong> for large estates to pass death benefits outside of the taxable estate</li>
+      <li><strong>Charitable remainder trusts</strong> and other giving vehicles for philanthropically inclined individuals</li>
+    </ul>
+
+    <p>Legacy planning often gets deferred because it forces us to think about mortality. But families who plan proactively preserve far more wealth — and avoid far more conflict — than those who don't.</p>
+
+    <h2 id="getting-started">How to Get Started With Wealth Management</h2>
+
+    <p>Getting started is simpler than most people think. You don't need a certain amount of money or to have "figured everything out" first. In fact, the best time to start building a financial plan is right now — before you need it.</p>
+
+    <p>Here's what the process looks like when we work together:</p>
+
+    <ol>
+      <li><strong>Discovery conversation</strong> — We talk through your current situation, your goals, your concerns, and your timeline. No judgment, no sales pitch.</li>
+      <li><strong>Financial snapshot</strong> — We look at your complete picture: income, assets, liabilities, existing coverage, retirement accounts, and tax situation.</li>
+      <li><strong>Plan design</strong> — I build a customized strategy that addresses all five pillars — not just the one or two that seem most urgent.</li>
+      <li><strong>Implementation</strong> — We put the plan in motion together, one step at a time, at a pace that works for you.</li>
+      <li><strong>Ongoing review</strong> — Your life changes. Your plan should too. We meet regularly to review your progress and adapt your strategy.</li>
+    </ol>
+
+    <p>A wealth management plan isn't a document you create once and forget. It's a living strategy that evolves with you. The most successful clients I work with treat their financial plan the same way they treat their health: with ongoing attention, regular check-ups, and a trusted professional in their corner.</p>
+
+    <p>If you're ready to take the next step — or just want to understand what a plan might look like for your situation — I'd love to connect. <a href="../index.html#contact">Schedule a complimentary, no-pressure consultation</a> and let's build your financial future together.</p>
+
+    <h3>Quick-Start Checklist</h3>
+    <ul class="checklist" role="list">
+      <li>Review and update all beneficiary designations</li>
+      <li>Ensure you have adequate life and disability insurance</li>
+      <li>Maximize your employer 401(k) match (free money)</li>
+      <li>Build a 3–6 month emergency fund before aggressive investing</li>
+      <li>Start a Roth IRA if you're eligible — the earlier, the better</li>
+      <li>Review your investment allocation annually</li>
+      <li>Have a basic will and power of attorney in place</li>
+      <li>Meet with a financial advisor to review your complete picture</li>
+    </ul>
+
+    <div class="article-cta">
+      <h3>Let's Build Your Financial Plan Together</h3>
+      <p>Schedule a complimentary strategy session. We'll review your complete financial picture and map out a clear path forward — no obligation, no pressure.</p>
+      <a href="../index.html#contact" class="btn-gold">Get Your Free Consultation →</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__links-row">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#services">Services</a>
+        <a href="life-insurance-investment-strategy.html">Life Insurance Guide</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+      <p class="footer__copy">© 2025 Jose Yniguez Financial Services. This article is for informational purposes only and does not constitute financial, tax, or legal advice. Consult a qualified professional before making financial decisions.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

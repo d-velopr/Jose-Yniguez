@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO Core ── -->
+  <title>Jose Yniguez | Wealth Management & Financial Advisor</title>
+  <meta name="description" content="Jose Yniguez is a trusted wealth management advisor specializing in life insurance, retirement planning, and personalized financial strategies built around your goals." />
+  <meta name="keywords" content="Jose Yniguez, wealth management advisor, life insurance advisor, retirement planning, financial planning, investment strategy, risk management, insurance wealth building" />
+  <meta name="author" content="Jose Yniguez" />
+  <link rel="canonical" href="https://joseyniguez.github.io/" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Jose Yniguez Financial" />
+  <meta property="og:title" content="Jose Yniguez | Wealth Management & Financial Advisor" />
+  <meta property="og:description" content="Comprehensive wealth management, life insurance, and financial planning tailored to your unique goals. Schedule a free consultation today." />
+  <meta property="og:url" content="https://joseyniguez.github.io/" />
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jose Yniguez | Wealth Management & Financial Advisor" />
+  <meta name="twitter:description" content="Comprehensive wealth management, life insurance, and financial planning tailored to your unique goals." />
+
+  <!-- ── Schema.org Structured Data ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Jose Yniguez Financial Services",
+    "url": "https://joseyniguez.github.io/",
+    "description": "Comprehensive wealth management, life insurance, retirement planning, and personalized financial advisory services.",
+    "founder": {
+      "@type": "Person",
+      "name": "Jose Yniguez",
+      "jobTitle": "Wealth Management Advisor",
+      "knowsAbout": ["Wealth Management", "Life Insurance", "Retirement Planning", "Investment Strategy", "Risk Management"]
+    },
+    "serviceType": ["Wealth Management", "Life Insurance", "Retirement Planning", "Investment Planning", "Risk Management"]
+  }
+  </script>
+
+  <!-- ── Fonts ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:      #1A2B4A;
+      --navy-dark: #0F1C33;
+      --gold:      #C9922A;
+      --gold-lt:   #E8B84B;
+      --white:     #FFFFFF;
+      --off-white: #F6F8FC;
+      --text:      #1A1A2E;
+      --muted:     #6B7280;
+      --border:    #E5E7EB;
+      --radius:    12px;
+      --shadow:    0 4px 24px rgba(26,43,74,0.10);
+      --shadow-lg: 0 12px 48px rgba(26,43,74,0.16);
+      --transition: 0.3s ease;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section { padding: 96px 0; }
+    .section--alt { background: var(--off-white); }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 580px;
+    }
+
+    .section-header { margin-bottom: 56px; }
+    .section-header--center { text-align: center; }
+    .section-header--center .section-sub { margin: 0 auto; }
+
+    /* ═══════════════════════════════════════════
+       BUTTONS
+    ═══════════════════════════════════════════ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+      border: 2px solid transparent;
+    }
+
+    .btn--primary {
+      background: var(--gold);
+      color: var(--white);
+    }
+    .btn--primary:hover { background: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(201,146,42,0.35); }
+
+    .btn--outline {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255,255,255,0.6);
+    }
+    .btn--outline:hover { background: rgba(255,255,255,0.12); border-color: var(--white); }
+
+    .btn--navy {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .btn--navy:hover { background: var(--navy-dark); transform: translateY(-2px); }
+
+    /* ═══════════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════════ */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 0;
+      transition: background var(--transition), padding var(--transition), box-shadow var(--transition);
+    }
+
+    .nav.scrolled {
+      background: var(--navy-dark);
+      padding: 12px 0;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.25);
+    }
+
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav__brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav__name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.1;
+    }
+
+    .nav__title {
+      font-size: 0.7rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav__links a {
+      color: rgba(255,255,255,0.85);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color var(--transition);
+    }
+    .nav__links a:hover { color: var(--gold); }
+
+    .nav__cta { margin-left: 12px; }
+
+    .nav__toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav__toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: all var(--transition);
+    }
+
+    /* ═══════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════ */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--navy-dark) 0%, #223560 55%, #1A3D5C 100%);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -15%;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(201,146,42,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -20%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero__inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 64px;
+      align-items: center;
+      padding: 120px 0 80px;
+    }
+
+    .hero__eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .hero__eyebrow-line {
+      width: 40px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .hero__eyebrow-text {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero__heading {
+      font-size: clamp(2.5rem, 5vw, 3.8rem);
+      color: var(--white);
+      margin-bottom: 24px;
+      line-height: 1.1;
+    }
+
+    .hero__heading em {
+      font-style: normal;
+      color: var(--gold);
+    }
+
+    .hero__sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 40px;
+      max-width: 500px;
+      line-height: 1.7;
+    }
+
+    .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .hero__card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius);
+      padding: 40px 32px;
+      backdrop-filter: blur(12px);
+    }
+
+    .hero__card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .hero__card-sub {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 28px;
+    }
+
+    .hero__services-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .hero__services-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255,255,255,0.85);
+      font-size: 0.9rem;
+    }
+
+    .hero__services-list li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* ═══════════════════════════════════════════
+       STATS BAR
+    ═══════════════════════════════════════════ */
+    .stats {
+      background: var(--navy);
+      padding: 48px 0;
+    }
+
+    .stats__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    .stats__item {
+      padding: 16px;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .stats__item:last-child { border-right: none; }
+
+    .stats__number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stats__label {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      font-weight: 500;
+    }
+
+    /* ═══════════════════════════════════════════
+       ABOUT
+    ═══════════════════════════════════════════ */
+    .about__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about__photo {
+      position: relative;
+    }
+
+    .about__photo-placeholder {
+      width: 100%;
+      aspect-ratio: 4/5;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #1A2B4A 0%, #2a4080 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+      gap: 12px;
+    }
+
+    .about__photo-placeholder svg {
+      width: 64px;
+      height: 64px;
+      opacity: 0.4;
+    }
+
+    .about__photo-badge {
+      position: absolute;
+      bottom: -24px;
+      right: -24px;
+      background: var(--gold);
+      color: var(--white);
+      border-radius: 12px;
+      padding: 20px 24px;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about__photo-badge-num {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .about__photo-badge-text {
+      font-size: 0.75rem;
+      opacity: 0.9;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .about__content { padding-bottom: 24px; }
+
+    .about__bio {
+      color: var(--muted);
+      margin-bottom: 20px;
+      line-height: 1.75;
+    }
+
+    .about__values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 32px 0;
+    }
+
+    .about__value {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .about__value-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: rgba(201,146,42,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .about__value-label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--navy);
+      margin-bottom: 2px;
+    }
+
+    .about__value-text {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    /* ═══════════════════════════════════════════
+       SERVICES
+    ═══════════════════════════════════════════ */
+    .services__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+
+    .service-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+      border-color: transparent;
+    }
+
+    .service-card:hover::before { transform: scaleX(1); }
+
+    .service-card__icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--navy) 0%, #2a4080 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    .service-card__title {
+      font-size: 1.15rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .service-card__desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+
+    .service-card__link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap var(--transition);
+    }
+
+    .service-card:hover .service-card__link { gap: 10px; }
+
+    /* ═══════════════════════════════════════════
+       PROCESS
+    ═══════════════════════════════════════════ */
+    .process__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      position: relative;
+    }
+
+    .process__grid::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: calc(16.66% + 14px);
+      right: calc(16.66% + 14px);
+      height: 2px;
+      background: linear-gradient(to right, var(--gold), var(--gold));
+      border-top: 2px dashed var(--border);
+    }
+
+    .process__step { text-align: center; padding: 0 16px; }
+
+    .process__num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 0 0 8px var(--off-white);
+    }
+
+    .process__title {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .process__desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ═══════════════════════════════════════════
+       TESTIMONIALS
+    ═══════════════════════════════════════════ */
+    .testimonials__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: '\201C';
+      position: absolute;
+      top: 20px;
+      right: 28px;
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      color: var(--gold);
+      opacity: 0.2;
+      line-height: 1;
+    }
+
+    .testimonial-card__stars {
+      color: var(--gold);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+
+    .testimonial-card__text {
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+
+    .testimonial-card__author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testimonial-card__avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy) 0%, #2a4080 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .testimonial-card__name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--navy);
+    }
+
+    .testimonial-card__role {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ═══════════════════════════════════════════
+       BLOG PREVIEW
+    ═══════════════════════════════════════════ */
+    .blog__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .blog-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: all var(--transition);
+    }
+
+    .blog-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .blog-card__banner {
+      height: 200px;
+      background: linear-gradient(135deg, var(--navy-dark) 0%, #2a4080 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-card__banner::after {
+      content: '';
+      position: absolute;
+      bottom: 0; right: 0;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(201,146,42,0.2) 0%, transparent 70%);
+    }
+
+    .blog-card__banner-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      line-height: 1.3;
+    }
+
+    .blog-card__body { padding: 28px; }
+
+    .blog-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .blog-card__cat {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(201,146,42,0.1);
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .blog-card__date {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .blog-card__title {
+      font-size: 1.15rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+      line-height: 1.35;
+      transition: color var(--transition);
+    }
+
+    .blog-card:hover .blog-card__title { color: var(--gold); }
+
+    .blog-card__excerpt {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+
+    .blog-card__read-more {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gold);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap var(--transition);
+    }
+
+    .blog-card:hover .blog-card__read-more { gap: 10px; }
+
+    /* ═══════════════════════════════════════════
+       CTA BANNER
+    ═══════════════════════════════════════════ */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--navy-dark) 0%, #223560 100%);
+      padding: 96px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(201,146,42,0.08) 0%, transparent 70%);
+    }
+
+    .cta-banner__content { position: relative; z-index: 1; }
+
+    .cta-banner__title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .cta-banner__sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 40px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-banner__actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ═══════════════════════════════════════════
+       CONTACT
+    ═══════════════════════════════════════════ */
+    .contact__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .contact__info-items {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .contact__info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .contact__info-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+
+    .contact__info-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+
+    .contact__info-val {
+      font-size: 0.95rem;
+      color: var(--navy);
+      font-weight: 500;
+    }
+
+    .contact__form { background: var(--off-white); border-radius: 16px; padding: 40px; }
+
+    .form-group { margin-bottom: 20px; }
+
+    .form-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text);
+      background: var(--white);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--navy);
+      box-shadow: 0 0 0 3px rgba(26,43,74,0.08);
+    }
+
+    .form-textarea { resize: vertical; min-height: 120px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    .form-submit { width: 100%; padding: 14px; font-size: 1rem; }
+
+    /* ═══════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════ */
+    .footer {
+      background: var(--navy-dark);
+      padding: 64px 0 32px;
+    }
+
+    .footer__top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer__brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .footer__brand-desc {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.65;
+    }
+
+    .footer__col-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .footer__links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer__links a {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.88rem;
+      transition: color var(--transition);
+    }
+    .footer__links a:hover { color: var(--white); }
+
+    .footer__bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer__copy {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .footer__disclaimer {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.3);
+      max-width: 500px;
+      text-align: right;
+    }
+
+    /* ═══════════════════════════════════════════
+       MOBILE MENU
+    ═══════════════════════════════════════════ */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--navy-dark);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--white);
+      transition: color var(--transition);
+    }
+
+    .mobile-menu a:hover { color: var(--gold); }
+
+    .mobile-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    /* ═══════════════════════════════════════════
+       ANIMATIONS
+    ═══════════════════════════════════════════ */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ═══════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .hero__inner { grid-template-columns: 1fr; gap: 40px; }
+      .hero__card { display: none; }
+      .about__inner { grid-template-columns: 1fr; gap: 40px; }
+      .about__photo { max-width: 400px; }
+      .about__photo-badge { bottom: -16px; right: -16px; }
+      .services__grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials__grid { grid-template-columns: repeat(2, 1fr); }
+      .contact__inner { grid-template-columns: 1fr; gap: 40px; }
+      .footer__top { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 64px 0; }
+      .nav__links, .nav__cta { display: none; }
+      .nav__toggle { display: flex; }
+      .stats__grid { grid-template-columns: repeat(2, 1fr); }
+      .stats__item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+      .stats__item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.1); }
+      .stats__item:nth-last-child(-n+2) { border-bottom: none; }
+      .services__grid { grid-template-columns: 1fr; }
+      .process__grid { grid-template-columns: 1fr; gap: 32px; }
+      .process__grid::before { display: none; }
+      .process__num { box-shadow: none; }
+      .testimonials__grid { grid-template-columns: 1fr; }
+      .blog__grid { grid-template-columns: 1fr; }
+      .footer__top { grid-template-columns: 1fr; }
+      .footer__bottom { flex-direction: column; text-align: center; }
+      .footer__disclaimer { text-align: center; }
+      .about__values { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="#home" class="nav__brand">
+          <span class="nav__name">Jose Yniguez</span>
+          <span class="nav__title">Wealth Management Advisor</span>
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#blog">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary nav__cta">Schedule a Call</a>
+        <button class="nav__toggle" aria-label="Open menu" onclick="openMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-close" onclick="closeMenu()" aria-label="Close menu">✕</button>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#process" onclick="closeMenu()">How It Works</a>
+    <a href="#blog" onclick="closeMenu()">Resources</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+    <a href="#contact" class="btn btn--primary" onclick="closeMenu()">Schedule a Call</a>
+  </div>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__eyebrow">
+            <div class="hero__eyebrow-line"></div>
+            <span class="hero__eyebrow-text">Certified Financial Advisor</span>
+          </div>
+          <h1 class="hero__heading">
+            Build Wealth.<br />
+            Protect What<br />
+            <em>Matters Most.</em>
+          </h1>
+          <p class="hero__sub">
+            I help individuals and families create comprehensive financial plans — combining smart investments, life insurance, and risk management strategies designed to grow and protect your wealth for generations.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Schedule a Free Consultation</a>
+            <a href="#services" class="btn btn--outline">View My Services</a>
+          </div>
+        </div>
+        <aside class="hero__card" aria-label="Services overview">
+          <p class="hero__card-title">What I Offer</p>
+          <p class="hero__card-sub">Comprehensive financial guidance for every stage of life</p>
+          <ul class="hero__services-list" role="list">
+            <li>Wealth Management &amp; Investment Strategy</li>
+            <li>Life Insurance Planning</li>
+            <li>Retirement &amp; Income Planning</li>
+            <li>Risk Management &amp; Protection</li>
+            <li>Estate &amp; Legacy Planning</li>
+            <li>Business Owner Financial Solutions</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ STATS ═══════ -->
+  <section class="stats" aria-label="Key statistics">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stats__item">
+          <div class="stats__number">10+</div>
+          <div class="stats__label">Years of Experience</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">200+</div>
+          <div class="stats__label">Families Served</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">$50M+</div>
+          <div class="stats__label">Assets Under Advisory</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">98%</div>
+          <div class="stats__label">Client Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ ABOUT ═══════ -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__photo">
+          <div class="about__photo-placeholder" aria-label="Photo of Jose Yniguez">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+            </svg>
+            <span>Jose Yniguez</span>
+          </div>
+          <div class="about__photo-badge" aria-label="10 plus years experience">
+            <div class="about__photo-badge-num">10+</div>
+            <div class="about__photo-badge-text">Years of<br>Experience</div>
+          </div>
+        </div>
+        <div class="about__content">
+          <span class="tag">About Jose</span>
+          <h2 class="section-title" id="about-heading">A Trusted Partner in Your Financial Journey</h2>
+          <p class="about__bio">
+            As a wealth management advisor, I've dedicated my career to helping families and individuals take control of their financial futures. I believe that true financial security comes not from a single product, but from a holistic strategy that integrates smart investing, comprehensive insurance coverage, and long-term planning.
+          </p>
+          <p class="about__bio">
+            My approach is simple: <strong>I listen first.</strong> Every client's situation is unique, and I take the time to understand your goals, concerns, and timeline before recommending any strategy. Whether you're just starting to build wealth or are planning your retirement, I'm here to guide you every step of the way.
+          </p>
+          <div class="about__values" role="list">
+            <div class="about__value" role="listitem">
+              <div class="about__value-icon" aria-hidden="true">🎯</div>
+              <div>
+                <div class="about__value-label">Goal-Oriented</div>
+                <div class="about__value-text">Your goals drive every recommendation</div>
+              </div>
+            </div>
+            <div class="about__value" role="listitem">
+              <div class="about__value-icon" aria-hidden="true">🤝</div>
+              <div>
+                <div class="about__value-label">Relationship First</div>
+                <div class="about__value-text">Long-term relationships, not transactions</div>
+              </div>
+            </div>
+            <div class="about__value" role="listitem">
+              <div class="about__value-icon" aria-hidden="true">🔍</div>
+              <div>
+                <div class="about__value-label">Transparent</div>
+                <div class="about__value-text">Clear, honest advice you can trust</div>
+              </div>
+            </div>
+            <div class="about__value" role="listitem">
+              <div class="about__value-icon" aria-hidden="true">📈</div>
+              <div>
+                <div class="about__value-label">Results-Driven</div>
+                <div class="about__value-text">Measured, accountable strategies</div>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--navy">Work With Jose →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SERVICES ═══════ -->
+  <section class="section section--alt" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header section-header--center fade-in">
+        <span class="tag">What I Do</span>
+        <h2 class="section-title" id="services-heading">Comprehensive Financial Services</h2>
+        <p class="section-sub">From protecting what you have today to building what you want tomorrow — I offer a full spectrum of financial solutions.</p>
+      </div>
+      <div class="services__grid">
+        <article class="service-card fade-in">
+          <div class="service-card__icon" aria-hidden="true">📊</div>
+          <h3 class="service-card__title">Wealth Management</h3>
+          <p class="service-card__desc">Custom investment strategies designed to grow your assets over time while managing risk. I build portfolios aligned with your risk tolerance, time horizon, and financial objectives.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-card__icon" aria-hidden="true">🛡️</div>
+          <h3 class="service-card__title">Life Insurance Planning</h3>
+          <p class="service-card__desc">Life insurance isn't just protection — it's a powerful wealth-building tool. I help you select the right policies, from term to permanent, that protect your family and grow tax-advantaged cash value.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-card__icon" aria-hidden="true">🏖️</div>
+          <h3 class="service-card__title">Retirement Planning</h3>
+          <p class="service-card__desc">Build a retirement strategy that ensures you never outlive your income. I optimize Social Security timing, IRAs, 401(k)s, annuities, and other vehicles to maximize your retirement paycheck.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-card__icon" aria-hidden="true">⚖️</div>
+          <h3 class="service-card__title">Risk Management</h3>
+          <p class="service-card__desc">Identify and protect against the financial risks that threaten your wealth — disability, critical illness, property loss, and liability. A comprehensive protection plan is the foundation of any solid financial strategy.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-card__icon" aria-hidden="true">🏛️</div>
+          <h3 class="service-card__title">Estate &amp; Legacy Planning</h3>
+          <p class="service-card__desc">Ensure your wealth transfers to your heirs the way you intend — efficiently, with minimal taxes and delays. I coordinate with estate attorneys to align your financial plan with your legacy wishes.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </article>
+        <article class="service-card fade-in">
+          <div class="service-card__icon" aria-hidden="true">💼</div>
+          <h3 class="service-card__title">Business Owner Solutions</h3>
+          <p class="service-card__desc">Tailored strategies for business owners including key-man insurance, buy-sell agreements, executive benefits, and business succession planning to protect your business and personal wealth simultaneously.</p>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PROCESS ═══════ -->
+  <section class="section" id="process" aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-header section-header--center fade-in">
+        <span class="tag">My Process</span>
+        <h2 class="section-title" id="process-heading">How We Build Your Financial Future</h2>
+        <p class="section-sub">A clear, structured approach that puts your goals first — every single time.</p>
+      </div>
+      <div class="process__grid" role="list">
+        <div class="process__step fade-in" role="listitem">
+          <div class="process__num" aria-hidden="true">1</div>
+          <h3 class="process__title">Discovery Call</h3>
+          <p class="process__desc">We start with a complimentary consultation to understand your financial situation, goals, concerns, and timeline. No pressure, no selling — just listening.</p>
+        </div>
+        <div class="process__step fade-in" role="listitem">
+          <div class="process__num" aria-hidden="true">2</div>
+          <h3 class="process__title">Custom Strategy</h3>
+          <p class="process__desc">I analyze your complete financial picture and design a personalized roadmap that integrates investments, insurance, and protection into one cohesive plan.</p>
+        </div>
+        <div class="process__step fade-in" role="listitem">
+          <div class="process__num" aria-hidden="true">3</div>
+          <h3 class="process__title">Implement &amp; Monitor</h3>
+          <p class="process__desc">We execute your plan together and I monitor your progress on an ongoing basis — adjusting your strategy as your life evolves to keep you on track.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TESTIMONIALS ═══════ -->
+  <section class="section section--alt" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header section-header--center fade-in">
+        <span class="tag">Client Stories</span>
+        <h2 class="section-title" id="testimonials-heading">What My Clients Say</h2>
+        <p class="section-sub">Real families, real results. Hear from the people I've had the privilege of serving.</p>
+      </div>
+      <div class="testimonials__grid" role="list">
+        <article class="testimonial-card fade-in" role="listitem">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-card__text">"Jose completely changed how I think about money. I went from having no plan to having a solid retirement strategy, life insurance, and a growing investment portfolio — all working together. He made it simple and never made me feel overwhelmed."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">MR</div>
+            <div>
+              <div class="testimonial-card__name">Maria R.</div>
+              <div class="testimonial-card__role">Small Business Owner</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card fade-in" role="listitem">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-card__text">"I came to Jose thinking life insurance was just an expense. He showed me how to use it as a tax-advantaged savings vehicle and protection plan at the same time. My family is now financially secure in ways I never imagined possible."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">DM</div>
+            <div>
+              <div class="testimonial-card__name">David M.</div>
+              <div class="testimonial-card__role">Engineer, Father of Three</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial-card fade-in" role="listitem">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="testimonial-card__text">"Jose's approach is different from every other advisor I've worked with. He actually listens. He built us a plan that accounts for our goals AND our fears. We finally feel like our financial future is in good hands."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">JT</div>
+            <div>
+              <div class="testimonial-card__name">Jennifer T.</div>
+              <div class="testimonial-card__role">Healthcare Professional</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ BLOG PREVIEW ═══════ -->
+  <section class="section" id="blog" aria-labelledby="blog-heading">
+    <div class="container">
+      <div class="section-header fade-in" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:48px;">
+        <div>
+          <span class="tag">Resources</span>
+          <h2 class="section-title" id="blog-heading">Financial Insights</h2>
+          <p class="section-sub">Actionable articles to help you make smarter financial decisions.</p>
+        </div>
+        <a href="blog/index.html" class="btn btn--navy">View All Articles →</a>
+      </div>
+      <div class="blog__grid">
+        <article class="blog-card fade-in">
+          <a href="blog/life-insurance-investment-strategy.html">
+            <div class="blog-card__banner" aria-hidden="true">
+              <p class="blog-card__banner-text">Life Insurance as a<br>Wealth-Building Tool</p>
+            </div>
+          </a>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__cat">Insurance</span>
+              <time class="blog-card__date" datetime="2025-05-01">May 2025</time>
+            </div>
+            <h3 class="blog-card__title">
+              <a href="blog/life-insurance-investment-strategy.html">Life Insurance as a Wealth-Building Tool: What Most Advisors Won't Tell You</a>
+            </h3>
+            <p class="blog-card__excerpt">Most people think of life insurance as a simple death benefit. But in the right structure, permanent life insurance can be one of the most powerful — and most overlooked — wealth accumulation strategies available.</p>
+            <a href="blog/life-insurance-investment-strategy.html" class="blog-card__read-more">Read Article →</a>
+          </div>
+        </article>
+        <article class="blog-card fade-in">
+          <a href="blog/wealth-management-essentials.html">
+            <div class="blog-card__banner" aria-hidden="true">
+              <p class="blog-card__banner-text">Wealth Management<br>Essentials Guide</p>
+            </div>
+          </a>
+          <div class="blog-card__body">
+            <div class="blog-card__meta">
+              <span class="blog-card__cat">Wealth Management</span>
+              <time class="blog-card__date" datetime="2025-04-15">April 2025</time>
+            </div>
+            <h3 class="blog-card__title">
+              <a href="blog/wealth-management-essentials.html">Wealth Management 101: The Complete Guide to Building and Protecting Your Financial Future</a>
+            </h3>
+            <p class="blog-card__excerpt">Wealth management is more than picking stocks — it's a holistic discipline that integrates investment strategy, risk management, tax efficiency, and legacy planning into one coordinated plan built around your life.</p>
+            <a href="blog/wealth-management-essentials.html" class="blog-card__read-more">Read Article →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA BANNER ═══════ -->
+  <section class="cta-banner" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-banner__content fade-in">
+        <h2 class="cta-banner__title" id="cta-heading">Ready to Take Control of Your Financial Future?</h2>
+        <p class="cta-banner__sub">Schedule a complimentary consultation and let's build a plan designed specifically for you — no obligation, no pressure.</p>
+        <div class="cta-banner__actions">
+          <a href="#contact" class="btn btn--primary">Get Your Free Consultation</a>
+          <a href="blog/wealth-management-essentials.html" class="btn btn--outline">Read Free Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACT ═══════ -->
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact__inner">
+        <div>
+          <span class="tag">Get In Touch</span>
+          <h2 class="section-title" id="contact-heading">Let's Start the Conversation</h2>
+          <p class="section-sub">Whether you have a specific question or just want to explore your options, I'm here to help. Every great financial plan starts with one conversation.</p>
+          <div class="contact__info-items" role="list">
+            <div class="contact__info-item" role="listitem">
+              <div class="contact__info-icon" aria-hidden="true">📧</div>
+              <div>
+                <div class="contact__info-label">Email</div>
+                <a class="contact__info-val" href="mailto:jose@example.com">jose@example.com</a>
+              </div>
+            </div>
+            <div class="contact__info-item" role="listitem">
+              <div class="contact__info-icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="contact__info-label">Phone</div>
+                <a class="contact__info-val" href="tel:+10000000000">(000) 000-0000</a>
+              </div>
+            </div>
+            <div class="contact__info-item" role="listitem">
+              <div class="contact__info-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="contact__info-label">Location</div>
+                <div class="contact__info-val">Serving clients nationwide</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form class="contact__form" name="contact" method="POST" aria-label="Contact form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="first-name">First Name</label>
+                <input class="form-input" type="text" id="first-name" name="first-name" placeholder="Maria" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last-name">Last Name</label>
+                <input class="form-input" type="text" id="last-name" name="last-name" placeholder="Rodriguez" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="interest">I'm Interested In</label>
+              <select class="form-select" id="interest" name="interest">
+                <option value="">Select a service...</option>
+                <option>Wealth Management</option>
+                <option>Life Insurance Planning</option>
+                <option>Retirement Planning</option>
+                <option>Risk Management</option>
+                <option>Estate &amp; Legacy Planning</option>
+                <option>Business Owner Solutions</option>
+                <option>General Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message (optional)</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Tell me a bit about your financial goals..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary form-submit">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__brand-name">Jose Yniguez</p>
+          <p class="footer__brand-desc">Comprehensive wealth management, insurance, and financial planning tailored to your unique goals and life stage.</p>
+        </div>
+        <div>
+          <p class="footer__col-title">Services</p>
+          <ul class="footer__links" role="list">
+            <li><a href="#services">Wealth Management</a></li>
+            <li><a href="#services">Life Insurance</a></li>
+            <li><a href="#services">Retirement Planning</a></li>
+            <li><a href="#services">Risk Management</a></li>
+            <li><a href="#services">Estate Planning</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Resources</p>
+          <ul class="footer__links" role="list">
+            <li><a href="blog/life-insurance-investment-strategy.html">Life Insurance Guide</a></li>
+            <li><a href="blog/wealth-management-essentials.html">Wealth Management 101</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__links" role="list">
+            <li><a href="mailto:jose@example.com">jose@example.com</a></li>
+            <li><a href="tel:+10000000000">(000) 000-0000</a></li>
+            <li><a href="#contact">Schedule a Call</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 Jose Yniguez Financial Services. All rights reserved.</p>
+        <p class="footer__disclaimer">Securities and investment advisory services offered through licensed representatives. This website is for informational purposes only and does not constitute financial advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Nav scroll effect ──
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ── Mobile menu ──
+    function openMenu() {
+      document.getElementById('mobileMenu').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // ── Fade-in on scroll ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // ── Form submit (update with your actual form backend) ──
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.form-submit');
+      btn.textContent = '✓ Message Sent!';
+      btn.style.background = '#2a7a4b';
+      btn.disabled = true;
+      // TODO: Wire to Formspree, Netlify Forms, or your email backend
+      // Example: fetch('https://formspree.io/f/YOUR_ID', { method: 'POST', body: new FormData(e.target) })
+    }
+  </script>
+</body>
+</html>
